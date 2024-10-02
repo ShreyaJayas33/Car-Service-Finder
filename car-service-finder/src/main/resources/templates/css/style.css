@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+nav {
+    position: relative;
+    z-index: 2; /* Ensure content is above the overlay */
+    background-color: rgba(0, 0, 255, 0.8); /* Blue background with some transparency */
+    border-bottom: 2px solid red; /* Add a thin red border at the bottom */
+    padding: 10px 0; /* Add padding for spacing */
+    width: 100%; /* Ensure nav takes full width */
+    display: flex; /* Use flexbox to position items */
+    align-items: center; /* Center items vertically */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-start; /* Center the nav items */
+    width: 100%; /* Ensure nav items take full width */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* Change text color to white */
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Light background on hover for better visibility */
+    border-radius: 5px;
+}
+
+.family-pic {
+    width: 100%; /* Make the image full width */
+    max-height: 300px; /* Set a max height */
+    object-fit: cover; /* Cover the area */
+    margin-top: 0; /* Remove spacing above the family picture */
+}
+
+.input-container {
+    text-align: center; /* Center the text and input */
+    margin-top: -50px; /* Adjust to overlap the family picture */
+    position: relative; /* Positioning for centering */
+}
+
+.input-container h1 {
+    color: #fff; /* White text color for visibility */
+}
+
+.zip-input {
+    padding: 10px;
+    width: 300px; /* Set a fixed width for the input box */
+    margin-top: 10px; /* Space above the input box */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.find-btn {
+    background-color: #df4881; /* Button color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; /* Space above the button */
+}
+
+.find-btn:hover {
+    background-color: #c430d7; /* Hover effect for the button */
+}
+
+/* Additional styles below as needed */
