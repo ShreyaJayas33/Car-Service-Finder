@@ -102,4 +102,116 @@ nav ul li a:hover {
 }
 
 
+/* General Body Styles */
+body {
+    background-color: #f9f9f9; /* Light background for better readability */
+    font-family: 'Poppins', sans-serif; /* Use the same font for consistency */
+}
+
+/* Header and Footer Styles */
+header {
+    background-color: rgba(0, 0, 255, 0.8); /* Consistent header color */
+    padding: 15px; /* Space around the header */
+    text-align: center; /* Center the header content */
+}
+
+footer {
+    text-align: center; /* Center footer text */
+    padding: 10px 0; /* Padding for footer */
+    background-color: rgba(0, 0, 255, 0.8); /* Same as header */
+    color: white; /* White text color */
+    position: relative; /* Allow footer to stay at the bottom */
+    bottom: 0; /* Stick to bottom */
+    width: 100%; /* Full width */
+}
+
+/* Styles for Forms */
+form {
+    background: white; /* White background for forms */
+    padding: 20px; /* Inner padding */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 20px; /* Space below the form */
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Inner padding for inputs */
+    margin-bottom: 10px; /* Space below inputs */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+button {
+    background-color: #df4881; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    padding: 10px 15px; /* Inner padding for buttons */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+    background-color: #c430d7; /* Darker button color on hover */
+}
+
+/* Styles for Tables */
+table {
+    width: 100%; /* Full width table */
+    border-collapse: collapse; /* No spacing between borders */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Light border for table cells */
+    padding: 8px; /* Inner padding for cells */
+    text-align: left; /* Align text to the left */
+}
+
+th {
+    background-color: #f2f2f2; /* Light gray background for headers */
+}
+
+/* Styles for Logout Page */
+.logout-message {
+    font-size: 1.2em; /* Larger text for logout message */
+    margin: 20px 0; /* Space above and below the message */
+    text-align: center; /* Center the message */
+}
+
 /* Additional styles below as needed */
+
+
+/* -------------------------- This is for dropdown login page ------------------------------------ */
+
+       /* Additional CSS for the dropdown */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+/* -------------------------------------------------------------------------------------------- */

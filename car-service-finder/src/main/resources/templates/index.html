@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find a TechNet Shop Near You</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+    </style>
 </head>
 <body>
 <div class="hero">
@@ -18,9 +20,15 @@
             <li><a href="careers.html">Careers</a></li>
         </ul>
         <div class="auth-buttons"> <!-- Added div for buttons -->
-            <a href="login.html" class="auth-btn">
-                <img src="img/user-icon.png" alt="User Icon" class="user-icon"> Log In / Sign Up
-            </a>
+            <div class="dropdown">
+                <a href="#" class="auth-btn">
+                    <img src="img/user-icon.png" alt="User Icon" class="user-icon"> Log In / Sign Up
+                </a>
+                <div class="dropdown-content">
+                    <a href="provider-login.html">Provider Login</a>
+                    <a href="customer-login.html">Customer Login</a> <!-- Placeholder for Customer Login -->
+                </div>
+            </div>
         </div>
     </nav>
 
