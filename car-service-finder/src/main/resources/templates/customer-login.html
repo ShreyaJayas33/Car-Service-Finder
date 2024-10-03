@@ -11,33 +11,33 @@
 
     -->
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer Login</title>
-    <link rel="stylesheet" href="css/login.css">
-    <script src="providerlogin.js" defer></script> <!-- Link to the external JavaScript file -->
-</head>
-<body>
-<header>
-    <h1>Customer Login</h1>
-</header>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Customer Login</title>
+        <link rel="stylesheet" href="css/login.css">
+        <script src="customer-login.js" defer></script> <!-- Link to the external JavaScript file -->
+    </head>
+    <body>
+    <header>
+        <h1>Customer Login</h1>
+    </header>
 
-<main>
-    <form id="loginForm">
-        <label for="username">Username or Email:</label>
-        <input type="text" id="username" name="username" required>
+    <main>
+        <form id="customerLoginForm">
+            <label for="customerEmail">Email:</label>
+            <input type="text" id="customerEmail" name="customerEmail" required>
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
+            <label for="customerPassword">Password:</label>
+            <input type="password" id="customerPassword" name="customerPassword" required>
 
-        <button type="submit">Login</button>
-    </form>
+            <button type="submit">Login</button>
+        </form>
 
-    <p class="info-message">If you don't have an account, please contact the admin for verification.</p>
-</main>
+        <p class="info-message">If you don't have an account, please contact support to register.</p>
+    </main>
 
-<footer>
-    <p>&copy; 2024 Car Service Finder</p>
-</footer>
-</body>
-</html>
+    <footer>
+        <p>&copy; 2024 Car Service Finder</p>
+    </footer>
+    </body>
+    </html>

@@ -3,133 +3,97 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Careers at Pacman Eatery</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script>
-    function showJobDetails(jobId) {
-        var jobs = document.getElementsByClassName('job-description');
-        for (var i = 0; i < jobs.length; i++) {
-            jobs[i].style.display = 'none'; // Hide all job descriptions
-        }
-        document.getElementById(jobId).style.display = 'block'; // Show selected job description
-    }
-  </script>
+  <title>Careers - Car Service Finder</title>
+  <link rel="stylesheet" href="css/careers.css"> <!-- Link to the careers CSS -->
+  <script src="careers.js" defer></script> <!-- Link to the careers JavaScript -->
 </head>
 <body>
-<div class="hero">
+<header>
+  <img src="img/logo.png" class="logo" alt="My Logo"> <!-- Logo on the left -->
   <nav>
-    <img src="img/logo.png" class="logo" alt="Pacman Eatery Logo">
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="menu.html">Menu</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-      <li><a href="careers.html">Careers</a></li>
     </ul>
+
+
   </nav>
+</header>
 
-  <div class="content">
-    <h1 class="anim">Join Our Team at Pacman Eatery</h1>
-    <p class="anim">We are always looking for talented individuals to join our team. Check out our open positions below and click on the job title to see the full description, responsibilities, and requirements.</p>
-
-    <div class="job-listings">
-      <h3>Open Positions:</h3>
-      <ul>
-        <li><a href="javascript:void(0)" onclick="showJobDetails('chef')">Chefs</a></li>
-        <li><a href="javascript:void(0)" onclick="showJobDetails('waiter')">Waiters</a></li>
-        <li><a href="javascript:void(0)" onclick="showJobDetails('manager')">Managers</a></li>
-        <li><a href="javascript:void(0)" onclick="showJobDetails('fryer')">Fryers</a></li>
-        <li><a href="javascript:void(0)" onclick="showJobDetails('cleaner')">Cleaners</a></li>
-      </ul>
+<main>
+  <h2>Career Opportunities</h2>
+  <div class="job-listing">
+    <div class="job-post" id="frontend-dev">
+      <h3>Frontend Developer</h3>
+      <button class="apply-btn" onclick="toggleDescription('frontend-dev')">View Description</button>
+      <div class="job-description">
+        <p><strong>Responsibilities:</strong></p>
+        <ul>
+          <li>Develop user-facing features.</li>
+          <li>Ensure the technical feasibility of UI/UX designs.</li>
+          <li>Optimize applications for maximum speed and scalability.</li>
+          <li>Collaborate with other team members and stakeholders.</li>
+        </ul>
+        <p><strong>Requirements:</strong></p>
+        <ul>
+          <li>Proficient understanding of web markup, including HTML5 and CSS3.</li>
+          <li>Basic understanding of server-side CSS pre-processing platforms.</li>
+          <li>Good understanding of JavaScript frameworks (e.g., React, Angular).</li>
+          <li>Experience with responsive and adaptive design.</li>
+        </ul>
+        <a href="application-form.html" class="apply-now">Apply Now</a>
+      </div>
     </div>
 
-    <!-- Job Descriptions -->
-    <div class="job-description" id="chef" style="display:none;">
-      <h3>Chefs</h3>
-      <p><strong>Responsibilities:</strong></p>
-      <ul>
-        <li>Prepare a variety of Indian vegetarian dishes with focus on quality and flavor.</li>
-        <li>Maintain a clean and organized kitchen workspace.</li>
-        <li>Work closely with the kitchen staff to ensure timely and quality food service.</li>
-        <li>Follow food safety standards and procedures.</li>
-      </ul>
-      <p><strong>Requirements:</strong></p>
-      <ul>
-        <li>Previous experience as a chef, preferably in Indian cuisine.</li>
-        <li>Ability to work in a fast-paced environment.</li>
-        <li>Strong knowledge of food safety and sanitation standards.</li>
-        <li>Excellent communication and teamwork skills.</li>
-      </ul>
+    <div class="job-post" id="backend-dev">
+      <h3>Backend Developer</h3>
+      <button class="apply-btn" onclick="toggleDescription('backend-dev')">View Description</button>
+      <div class="job-description">
+        <p><strong>Responsibilities:</strong></p>
+        <ul>
+          <li>Develop and maintain server-side applications.</li>
+          <li>Design and manage databases.</li>
+          <li>Implement APIs and integrate with frontend technologies.</li>
+          <li>Ensure security and data protection.</li>
+        </ul>
+        <p><strong>Requirements:</strong></p>
+        <ul>
+          <li>Proficiency in server-side programming languages (e.g., Node.js, Python, Ruby).</li>
+          <li>Experience with database management systems (e.g., MySQL, MongoDB).</li>
+          <li>Understanding of RESTful services and API design.</li>
+          <li>Strong problem-solving skills and attention to detail.</li>
+        </ul>
+        <a href="application-form.html" class="apply-now">Apply Now</a>
+      </div>
     </div>
 
-    <div class="job-description" id="waiter" style="display:none;">
-      <h3>Waiters</h3>
-      <p><strong>Responsibilities:</strong></p>
-      <ul>
-        <li>Take orders and serve food and beverages to customers efficiently.</li>
-        <li>Ensure customer satisfaction by providing friendly and professional service.</li>
-        <li>Maintain cleanliness and organization of the dining area.</li>
-        <li>Handle customer inquiries and special requests.</li>
-      </ul>
-      <p><strong>Requirements:</strong></p>
-      <ul>
-        <li>Previous experience in a restaurant or hospitality setting preferred.</li>
-        <li>Strong communication and interpersonal skills.</li>
-        <li>Ability to work well under pressure in a fast-paced environment.</li>
-      </ul>
+    <div class="job-post" id="ui-ux-designer">
+      <h3>UI/UX Designer</h3>
+      <button class="apply-btn" onclick="toggleDescription('ui-ux-designer')">View Description</button>
+      <div class="job-description">
+        <p><strong>Responsibilities:</strong></p>
+        <ul>
+          <li>Create user-centered designs by understanding business requirements.</li>
+          <li>Conduct user research and testing.</li>
+          <li>Collaborate with developers to implement and refine designs.</li>
+          <li>Produce wireframes, storyboards, and user flows.</li>
+        </ul>
+        <p><strong>Requirements:</strong></p>
+        <ul>
+          <li>Proficiency in design software (e.g., Adobe XD, Sketch, Figma).</li>
+          <li>Strong portfolio showcasing design skills and process.</li>
+          <li>Excellent communication skills and attention to detail.</li>
+          <li>Understanding of user experience principles and best practices.</li>
+        </ul>
+        <a href="application-form.html" class="apply-now">Apply Now</a>
+      </div>
     </div>
 
-    <div class="job-description" id="manager" style="display:none;">
-      <h3>Managers</h3>
-      <p><strong>Responsibilities:</strong></p>
-      <ul>
-        <li>Oversee daily operations of the restaurant.</li>
-        <li>Manage staff schedules and ensure optimal performance.</li>
-        <li>Monitor inventory and coordinate with suppliers.</li>
-        <li>Ensure customer satisfaction and handle any complaints.</li>
-        <li>Implement and maintain health and safety regulations.</li>
-      </ul>
-      <p><strong>Requirements:</strong></p>
-      <ul>
-        <li>Previous experience in restaurant management.</li>
-        <li>Strong leadership and organizational skills.</li>
-        <li>Excellent communication and problem-solving abilities.</li>
-      </ul>
-    </div>
-
-    <div class="job-description" id="fryer" style="display:none;">
-      <h3>Fryers</h3>
-      <p><strong>Responsibilities:</strong></p>
-      <ul>
-        <li>Prepare and fry food items according to recipes and restaurant standards.</li>
-        <li>Maintain cleanliness and safety of the fry station.</li>
-        <li>Monitor food quality and ensure dishes are served hot and fresh.</li>
-        <li>Work in a fast-paced environment and collaborate with kitchen staff.</li>
-      </ul>
-      <p><strong>Requirements:</strong></p>
-      <ul>
-        <li>Experience in frying or cooking in a restaurant setting preferred.</li>
-        <li>Strong attention to detail and ability to follow recipes accurately.</li>
-        <li>Ability to work in a team and take direction from kitchen leads.</li>
-      </ul>
-    </div>
-
-    <div class="job-description" id="cleaner" style="display:none;">
-      <h3>Cleaners</h3>
-      <p><strong>Responsibilities:</strong></p>
-      <ul>
-        <li>Maintain cleanliness in all areas of the restaurant, including the kitchen, dining area, and restrooms.</li>
-        <li>Follow cleaning schedules and ensure sanitation standards are met.</li>
-        <li>Dispose of waste and ensure the restaurant is presentable at all times.</li>
-      </ul>
-      <p><strong>Requirements:</strong></p>
-      <ul>
-        <li>Previous experience in cleaning or janitorial roles preferred.</li>
-        <li>Ability to work efficiently and follow instructions.</li>
-        <li>Strong attention to detail and commitment to maintaining cleanliness.</li>
-      </ul>
-    </div>
+    <!-- Add more job postings here as needed -->
   </div>
-</div>
+</main>
+
+<footer>
+  <p>&copy; 2024 Car Service Finder</p>
+</footer>
 </body>
 </html>
