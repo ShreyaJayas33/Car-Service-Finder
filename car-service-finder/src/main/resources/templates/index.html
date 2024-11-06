@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find a TechNet Shop Near You</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwXZuLAz7Cb00nKp-tRlyZggRMTj3J7UQ&callback=initMap"
+            async defer></script>
     <style>
     </style>
 </head>
@@ -39,6 +41,18 @@
         <input type="text" placeholder="Zip Code, City, or Address" class="zip-input">
         <button class="find-btn">Go</button>
     </div>
+
+    <!-- this will be the start of the google maps api -->
+    <div id="map"></div>
+    <script>
+        function initMap (){
+           const location = {lat: 36.0689, lng: -79.8102};
+           const map = new google.maps.Map(document.getElementById("map"),{
+            zoom: 10,
+            center: location,
+           });
+        }
+    </script>
 </div>
 </body>
 </html>
