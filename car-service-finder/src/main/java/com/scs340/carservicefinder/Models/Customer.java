@@ -1,23 +1,32 @@
 package com.scs340.carservicefinder.Models;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name= 'customerdb')
 public class Customer {
-    private Long id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private int id;
+
+    @Column(nullable = false)
     private String name;
+
     private String email;
 
     // Constructor
-    public Customer(Long id, String name, String email) {
+    public Customer(int id, String name, String email) {
         this.id = id;
         this.name = name;
         this.email = email;
     }
 
     // Getters and Setters
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 

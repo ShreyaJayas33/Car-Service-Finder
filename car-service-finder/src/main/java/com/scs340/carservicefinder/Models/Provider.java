@@ -1,15 +1,29 @@
 package com.scs340.carservicefinder.Models;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name ='providersdb')
 public class Provider {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int shopid;
+
+    @Column(nullable = false)
     private String shopname;
+
+    @Column(nullable = false)
     private String address;
+    @Column(nullable = false)
     private String city;
+
     private String state;
     private String zip;
     private String phonenum;
     private int rating;
+    @Column(nullable = false)
     private float longitude;
+    @Column(nullable = false)
     private float latitude;
 
     //constructor
